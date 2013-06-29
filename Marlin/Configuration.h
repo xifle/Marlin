@@ -222,7 +222,7 @@
 // I Term of the bed PID will be inactive if the difference between the actual and the target temperature is
 // more than PIDTEMPBED_I_TERM_FUNCTIONAL_RANGE. This prevents windup for beds with very inert behaviour 
 // (e.g. aluminium or for weak heaters). Set to -1 to disable this feature
-#define PIDTEMPBED_I_TERM_FUNCTIONAL_RANGE -1
+#define PIDTEMPBED_I_TERM_FUNCTIONAL_RANGE 3
 
 #ifdef PIDTEMPBED
 // PCB Heatbed @20V / 170 W, Aluminium plate
