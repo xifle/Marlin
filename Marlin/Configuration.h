@@ -219,6 +219,11 @@
 // so you shouldn't use it unless you are OK with PWM on your bed.  (see the comment on enabling PIDTEMPBED)
 #define MAX_BED_POWER 180 // limits duty cycle to bed; 255=full current
 
+// I Term of the bed PID will be inactive if the difference between the actual and the target temperature is
+// more than PIDTEMPBED_I_TERM_FUNCTIONAL_RANGE. This prevents windup for beds with very inert behaviour 
+// (e.g. aluminium or for weak heaters). Set to -1 to disable this feature
+#define PIDTEMPBED_I_TERM_FUNCTIONAL_RANGE -1
+
 #ifdef PIDTEMPBED
 // PCB Heatbed @20V / 170 W, Aluminium plate
 #define  DEFAULT_bedKp 31.02    //150.53
