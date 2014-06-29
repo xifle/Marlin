@@ -46,17 +46,10 @@
 
 //  extruder run-out prevention.
 //if the machine is idle, and the temperature over MINTEMP, every couple of SECONDS some filament is extruded
-<<<<<<< .merge_file_lgmcUI
 #define EXTRUDER_RUNOUT_PREVENT  
 #define EXTRUDER_RUNOUT_MINTEMP 200  
 #define EXTRUDER_RUNOUT_SECONDS 120.
 #define EXTRUDER_RUNOUT_ESTEPS 28. //mm filament
-=======
-//#define EXTRUDER_RUNOUT_PREVENT
-#define EXTRUDER_RUNOUT_MINTEMP 190
-#define EXTRUDER_RUNOUT_SECONDS 30.
-#define EXTRUDER_RUNOUT_ESTEPS 14. //mm filament
->>>>>>> .merge_file_i7s4IP
 #define EXTRUDER_RUNOUT_SPEED 1500.  //extrusion speed
 #define EXTRUDER_RUNOUT_EXTRUDE 100
 
